@@ -1,12 +1,31 @@
-<h1>HEADER</h1>
-<button type="Button" onclick="Klikkaus()" >click me</button>
-<script>
-    let klikkaukset = 0;
-    function Klikkaus(){
-        klikkaukset++;
-        if(klikkaukset > 50){
-            alert("LOPETA")
-        }
-    }
-</script>
-<iframe src="https://scratch.mit.edu/projects/561555106/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+    <body>
+        <h1>HEADER</h1>
+
+
+        <img src="munakuva.png" alt="" id="munakuva">
+        
+        <script>
+            let klikkaukset = 0;
+            function Klikkaus(){
+                klikkaukset++;
+                document.getElementById("numero"),innerHTML = klikkaukset
+                if(klikkaukset > 5){
+                    document.getElementById("munakuva").src = "rikkinäinenmuna.png"
+                    alert("LOPETA")
+                }
+            }
+        </script>
+        
+        <p><button type="Button" onclick="Klikkaus()" >click me</button></p>
+        
+        <iframe src="https://scratch.mit.edu/projects/561555106/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </body>
+
+</html>
+
