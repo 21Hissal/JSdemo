@@ -8,10 +8,11 @@
         <h1>HEADER</h1>
 
 
-        <img src="munakuva.png" alt="" id="munakuva">
+        <img src="munakuva.png" id="munakuva" onclick="Klikkaus()">
         
         <script>
             let klikkaukset = 0;
+
             function Klikkaus(){
                 klikkaukset++;
                 document.getElementById("numero"),innerHTML = klikkaukset
@@ -22,9 +23,8 @@
             }
         </script>
         
-        <p><button type="Button" onclick="Klikkaus()" >click me</button></p>
-        
         <iframe src="https://scratch.mit.edu/projects/561555106/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        
     </body>
 
 </html>
