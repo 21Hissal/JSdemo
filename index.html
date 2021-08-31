@@ -7,17 +7,20 @@
     <body>
         <h1>HEADER</h1>
 
-
         <img src="munakuva.png" id="munakuva" onclick="Klikkaus()" width="500">
         
         <script>
             let klikkaukset = 0;
+            let ääni = new audio("Shatter.mp3")
 
             function Klikkaus(){
                 klikkaukset++;
                 document.getElementById("numero"),innerHTML = klikkaukset
                 if(klikkaukset > 5){
+                    ääni.play()
                     document.getElementById("munakuva").src = "rikkinäinenmuna.png"
+                    Audio.getElementById("Shatter").src = "Shatter.mp3"
+                    audio
                 }
             }
         </script>
